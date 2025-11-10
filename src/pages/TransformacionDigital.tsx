@@ -6,7 +6,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProjectCard from "@/components/ProjectCard";
-import serviceDigital from "@/assets/service-digital.jpg";
 
 const TransformacionDigital = () => {
   const benefits = [
@@ -98,7 +97,7 @@ const TransformacionDigital = () => {
               </div>
               <div className="relative">
                 <img 
-                  src={serviceDigital} 
+                  src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800" 
                   alt="Transformación Digital" 
                   className="rounded-lg shadow-2xl"
                 />

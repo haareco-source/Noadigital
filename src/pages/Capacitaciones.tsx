@@ -6,7 +6,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProjectCard from "@/components/ProjectCard";
-import serviceTraining from "@/assets/service-training.jpg";
 
 const Capacitaciones = () => {
   const benefits = [
@@ -116,7 +115,7 @@ const Capacitaciones = () => {
               </div>
               <div className="relative">
                 <img 
-                  src={serviceTraining} 
+                  src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800" 
                   alt="Capacitaciones Tecnológicas" 
                   className="rounded-lg shadow-2xl"
                 />

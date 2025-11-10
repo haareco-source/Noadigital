@@ -6,7 +6,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProjectCard from "@/components/ProjectCard";
-import service3D from "@/assets/service-3d.jpg";
 
 const Impresion3D = () => {
   const benefits = [
@@ -98,7 +97,7 @@ const Impresion3D = () => {
               </div>
               <div className="relative">
                 <img 
-                  src={service3D} 
+                  src="https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&q=80&w=800" 
                   alt="Impresión 3D" 
                   className="rounded-lg shadow-2xl"
                 />

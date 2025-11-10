@@ -6,7 +6,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProjectCard from "@/components/ProjectCard";
-import serviceSupport from "@/assets/service-support.jpg";
 
 const SoporteTecnico = () => {
   const benefits = [
@@ -98,7 +97,7 @@ const SoporteTecnico = () => {
               </div>
               <div className="relative">
                 <img 
-                  src={serviceSupport} 
+                  src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=800" 
                   alt="Soporte Técnico" 
                   className="rounded-lg shadow-2xl"
                 />

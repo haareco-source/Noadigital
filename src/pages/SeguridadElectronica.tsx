@@ -6,7 +6,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProjectCard from "@/components/ProjectCard";
-import serviceSecurity from "@/assets/service-security.jpg";
 
 const SeguridadElectronica = () => {
   const benefits = [
@@ -98,7 +97,7 @@ const SeguridadElectronica = () => {
               </div>
               <div className="relative">
                 <img 
-                  src={serviceSecurity} 
+                  src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&q=80&w=800" 
                   alt="Seguridad Electrónica" 
                   className="rounded-lg shadow-2xl"
                 />
