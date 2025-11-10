@@ -10,8 +10,6 @@ import Footer from "@/components/Footer";
 import ServiceCard from "@/components/ServiceCard";
 import ProjectCard from "@/components/ProjectCard";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import heroImage from "@/assets/hero-tech.jpg";
-import teamImage from "@/assets/team-innovation.jpg";
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -88,7 +86,7 @@ const Index = () => {
       <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black">
           <img 
-            src={heroImage} 
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1920" 
             alt="Tecnología FABRI3D" 
             className="w-full h-full object-cover opacity-30"
           />
@@ -121,7 +119,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src={teamImage} 
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800" 
                 alt="Equipo FABRI3D" 
                 className="rounded-lg shadow-xl"
               />
