@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/95 backdrop-blur-md shadow-md" : "bg-transparent"
+        isScrolled ? "bg-header shadow-md" : "bg-header"
       }`}
     >
       <div className="container mx-auto px-4">
@@ -52,7 +52,7 @@ const Header = () => {
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href.replace("#", ""))}
-                  className="text-foreground hover:text-primary transition-colors font-medium"
+                  className="text-header-foreground hover:text-primary transition-colors font-medium"
                 >
                   {link.name}
                 </button>
@@ -60,7 +60,7 @@ const Header = () => {
                 <Link
                   key={link.name}
                   to={link.href}
-                  className="text-foreground hover:text-primary transition-colors font-medium"
+                  className="text-header-foreground hover:text-primary transition-colors font-medium"
                 >
                   {link.name}
                 </Link>
@@ -80,23 +80,23 @@ const Header = () => {
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
-              <X className="w-6 h-6 text-foreground" />
+              <X className="w-6 h-6 text-header-foreground" />
             ) : (
-              <Menu className="w-6 h-6 text-foreground" />
+              <Menu className="w-6 h-6 text-header-foreground" />
             )}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-border">
+          <nav className="md:hidden py-4 border-t border-header-foreground/20">
             <div className="flex flex-col space-y-4">
               {navLinks.map((link) =>
                 link.isScroll ? (
                   <button
                     key={link.name}
                     onClick={() => scrollToSection(link.href.replace("#", ""))}
-                    className="text-foreground hover:text-primary transition-colors font-medium text-left px-2"
+                    className="text-header-foreground hover:text-primary transition-colors font-medium text-left px-2"
                   >
                     {link.name}
                   </button>
@@ -104,7 +104,7 @@ const Header = () => {
                   <Link
                     key={link.name}
                     to={link.href}
-                    className="text-foreground hover:text-primary transition-colors font-medium px-2"
+                    className="text-header-foreground hover:text-primary transition-colors font-medium px-2"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {link.name}

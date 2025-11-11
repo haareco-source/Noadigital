@@ -10,7 +10,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-footer text-footer-foreground">
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo & Description */}
@@ -18,7 +18,7 @@ const Footer = () => {
             <Link to="/" className="inline-block mb-4">
               <span className="text-2xl font-bold text-primary">FABRI3D</span>
             </Link>
-            <p className="text-gray-400 mb-4">
+            <p className="text-footer-foreground/70 mb-4">
               Innovación y Tecnología Aplicada para la transformación digital de tu empresa
             </p>
           </div>
@@ -28,14 +28,14 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Enlaces Rápidos</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-400 hover:text-primary transition-colors">
+                <Link to="/" className="text-footer-foreground/70 hover:text-primary transition-colors">
                   Inicio
                 </Link>
               </li>
               <li>
                 <button
                   onClick={() => scrollToSection("quienes-somos")}
-                  className="text-gray-400 hover:text-primary transition-colors"
+                  className="text-footer-foreground/70 hover:text-primary transition-colors"
                 >
                   Quiénes Somos
                 </button>
@@ -43,20 +43,20 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => scrollToSection("servicios")}
-                  className="text-gray-400 hover:text-primary transition-colors"
+                  className="text-footer-foreground/70 hover:text-primary transition-colors"
                 >
                   Servicios
                 </button>
               </li>
               <li>
-                <Link to="/proyectos" className="text-gray-400 hover:text-primary transition-colors">
+                <Link to="/proyectos" className="text-footer-foreground/70 hover:text-primary transition-colors">
                   Proyectos
                 </Link>
               </li>
               <li>
                 <button
                   onClick={() => scrollToSection("contacto")}
-                  className="text-gray-400 hover:text-primary transition-colors"
+                  className="text-footer-foreground/70 hover:text-primary transition-colors"
                 >
                   Contacto
                 </button>
@@ -71,7 +71,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/servicios/transformacion-digital"
-                  className="text-gray-400 hover:text-primary transition-colors"
+                  className="text-footer-foreground/70 hover:text-primary transition-colors"
                 >
                   Transformación Digital
                 </Link>
@@ -79,7 +79,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/servicios/impresion-3d"
-                  className="text-gray-400 hover:text-primary transition-colors"
+                  className="text-footer-foreground/70 hover:text-primary transition-colors"
                 >
                   Impresión 3D
                 </Link>
@@ -87,7 +87,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/servicios/seguridad-electronica"
-                  className="text-gray-400 hover:text-primary transition-colors"
+                  className="text-footer-foreground/70 hover:text-primary transition-colors"
                 >
                   Seguridad Electrónica
                 </Link>
@@ -95,7 +95,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/servicios/soporte-tecnico"
-                  className="text-gray-400 hover:text-primary transition-colors"
+                  className="text-footer-foreground/70 hover:text-primary transition-colors"
                 >
                   Soporte Técnico
                 </Link>
@@ -103,7 +103,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/servicios/capacitaciones"
-                  className="text-gray-400 hover:text-primary transition-colors"
+                  className="text-footer-foreground/70 hover:text-primary transition-colors"
                 >
                   Capacitaciones
                 </Link>
@@ -117,7 +117,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-gray-400">
+                <span className="text-footer-foreground/70">
                   Libertador General San Martín, Jujuy, Argentina
                 </span>
               </li>
@@ -125,7 +125,7 @@ const Footer = () => {
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <a
                   href="tel:+5493886525051"
-                  className="text-gray-400 hover:text-primary transition-colors"
+                  className="text-footer-foreground/70 hover:text-primary transition-colors"
                 >
                   +54 9 3886 525051
                 </a>
@@ -134,23 +134,23 @@ const Footer = () => {
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                 <a
                   href="mailto:haareco@gmail.com"
-                  className="text-gray-400 hover:text-primary transition-colors"
+                  className="text-footer-foreground/70 hover:text-primary transition-colors"
                 >
                   haareco@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Globe className="w-5 h-5 text-primary flex-shrink-0" />
-                <span className="text-gray-400">www.fabri3d.com.ar</span>
+                <span className="text-footer-foreground/70">www.fabri3d.com.ar</span>
               </li>
             </ul>
           </div>
         </div>
 
         {/* Social Media & Copyright */}
-        <div className="mt-12 pt-8 border-t border-gray-800">
+        <div className="mt-12 pt-8 border-t border-footer-foreground/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-sm">
+            <p className="text-footer-foreground/70 text-sm">
               © 2025 FABRI3D — Innovación y Tecnología Aplicada
             </p>
             <div className="flex items-center gap-4">
@@ -158,7 +158,7 @@ const Footer = () => {
                 href="https://www.facebook.com/fabri3d"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary transition-colors"
+                className="text-footer-foreground/70 hover:text-primary transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
@@ -167,7 +167,7 @@ const Footer = () => {
                 href="https://www.linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary transition-colors"
+                className="text-footer-foreground/70 hover:text-primary transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
@@ -176,7 +176,7 @@ const Footer = () => {
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary transition-colors"
+                className="text-footer-foreground/70 hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
@@ -185,7 +185,7 @@ const Footer = () => {
                 href="https://www.youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-primary transition-colors"
+                className="text-footer-foreground/70 hover:text-primary transition-colors"
                 aria-label="YouTube"
               >
                 <Youtube className="w-5 h-5" />
