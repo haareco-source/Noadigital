@@ -10,6 +10,14 @@ import Footer from "@/components/Footer";
 import ServiceCard from "@/components/ServiceCard";
 import ProjectCard from "@/components/ProjectCard";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -23,6 +31,39 @@ const Index = () => {
     toast.success("Mensaje enviado exitosamente. Te contactaremos pronto!");
     setFormData({ name: "", email: "", message: "" });
   };
+
+  const heroSlides = [
+    {
+      title: "Transformación Digital y Consultoría",
+      description: "Implementamos tecnologías IoT, Cloud, IA y automatización para modernizar tu empresa",
+      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1920",
+      link: "/servicios/transformacion-digital"
+    },
+    {
+      title: "Impresión 3D Profesional",
+      description: "Prototipado rápido y fabricación de piezas industriales con tecnología de manufactura aditiva",
+      image: "https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&q=80&w=1920",
+      link: "/servicios/impresion-3d"
+    },
+    {
+      title: "Seguridad Electrónica y CCTV",
+      description: "Sistemas de videovigilancia inteligente, control de accesos y monitoreo integral",
+      image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&q=80&w=1920",
+      link: "/servicios/seguridad-electronica"
+    },
+    {
+      title: "Soporte Técnico y Redes",
+      description: "Mantenimiento, optimización y gestión de infraestructura IT para tu organización",
+      image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=1920",
+      link: "/servicios/soporte-tecnico"
+    },
+    {
+      title: "Cursos y Capacitaciones Tecnológicas",
+      description: "Formación especializada en IA, robótica, impresión 3D y tecnologías emergentes",
+      image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=1920",
+      link: "/servicios/capacitaciones"
+    }
+  ];
 
   const services = [
     {
@@ -82,35 +123,59 @@ const Index = () => {
     <div className="min-h-screen">
       <Header />
       
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black">
-          <img 
-            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1920" 
-            alt="Tecnología FABRI3D" 
-            className="w-full h-full object-cover opacity-30"
-          />
-        </div>
-        <div className="container relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="text-white">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
-                Innovación y Tecnología Aplicada
-              </h1>
-              <p className="text-xl md:text-2xl mb-8 text-gray-300 animate-slide-up">
-                Soluciones inteligentes para la industria y la transformación digital
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 animate-scale-in">
-                <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-lg">
-                  <a href="#servicios">Ver servicios</a>
-                </Button>
-                <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black text-lg">
-                  <a href="#contacto">Contactanos</a>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* Hero Carousel Section */}
+      <section className="relative pt-20 overflow-hidden">
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          plugins={[
+            Autoplay({
+              delay: 5000,
+            }),
+          ]}
+          className="w-full"
+        >
+          <CarouselContent>
+            {heroSlides.map((slide, index) => (
+              <CarouselItem key={index}>
+                <div className="relative h-[600px] md:h-[700px] overflow-hidden">
+                  {/* Background Image */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black">
+                    <img 
+                      src={slide.image} 
+                      alt={slide.title}
+                      className="w-full h-full object-cover opacity-40"
+                    />
+                  </div>
+                  
+                  {/* Content Overlay */}
+                  <div className="container relative z-10 h-full flex items-center">
+                    <div className="max-w-3xl text-white">
+                      <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">
+                        {slide.title}
+                      </h2>
+                      <p className="text-xl md:text-2xl mb-8 text-gray-300 animate-slide-up">
+                        {slide.description}
+                      </p>
+                      <div className="flex flex-col sm:flex-row gap-4 animate-scale-in">
+                        <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-lg">
+                          <Link to={slide.link}>Conocer más</Link>
+                        </Button>
+                        <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black text-lg">
+                          <a href="#contacto">Contactanos</a>
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-4 bg-black/50 text-white border-white/20 hover:bg-black/70" />
+          <CarouselNext className="right-4 bg-black/50 text-white border-white/20 hover:bg-black/70" />
+        </Carousel>
       </section>
 
       {/* About Section */}
