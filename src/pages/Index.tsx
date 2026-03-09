@@ -156,7 +156,7 @@ const Index = () => {
                       <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">
                         {slide.title}
                       </h2>
-                      <p className="text-xl md:text-2xl mb-8 text-gray-300 animate-slide-up">
+                      <p className="text-xl md:text-2xl mb-8 text-primary-foreground/80 animate-slide-up">
                         {slide.description}
                       </p>
                       <div className="flex flex-col sm:flex-row gap-4 animate-scale-in">
