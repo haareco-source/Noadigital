@@ -141,7 +141,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Globe className="w-5 h-5 text-primary flex-shrink-0" />
-                <span className="text-footer-foreground/70">www.fabri3d.com.ar</span>
+                <span className="text-footer-foreground/70">www.noadigital.com.ar</span>
               </li>
             </ul>
           </div>
