@@ -142,7 +142,7 @@ const Index = () => {
               <CarouselItem key={index}>
                 <div className="relative h-[600px] md:h-[700px] overflow-hidden">
                   {/* Background Image */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black">
+                  <div className="absolute inset-0 bg-gradient-to-br from-foreground/90 via-foreground/70 to-foreground/90">
                     <img 
                       src={slide.image} 
                       alt={slide.title}
