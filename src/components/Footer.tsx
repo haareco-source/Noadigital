@@ -151,7 +151,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-footer-foreground/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-footer-foreground/70 text-sm">
-              © 2025 FABRI3D — Innovación y Tecnología Aplicada
+              © 2025 NOADIGITAL — Innovación y Tecnología Aplicada
             </p>
             <div className="flex items-center gap-4">
               <a

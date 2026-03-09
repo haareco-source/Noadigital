@@ -145,7 +145,7 @@ const Capacitaciones = () => {
         {/* Benefits */}
         <section className="py-16 md:py-24 bg-muted">
           <div className="container">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">¿Por Qué Capacitarte con FABRI3D?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12"><h2 className="text-3xl md:text-4xl font-bold text-center mb-12">¿Por Qué Capacitarte con NOADIGITAL?</h2></h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {benefits.map((benefit, index) => (
                 <Card key={index} className="text-center hover:shadow-lg transition-shadow">

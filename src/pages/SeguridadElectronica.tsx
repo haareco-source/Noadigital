@@ -112,7 +112,7 @@ const SeguridadElectronica = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Soluciones de Seguridad Profesional</h2>
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
               <p>
-                En <span className="text-primary font-semibold">FABRI3D</span>, diseñamos e implementamos <strong>sistemas de seguridad electrónica</strong> adaptados a las necesidades específicas de tu empresa, industria o institución.
+                En <span className="text-primary font-semibold">NOADIGITAL</span>, diseñamos e implementamos <strong>sistemas de seguridad electrónica</strong> adaptados a las necesidades específicas de tu empresa, industria o institución., diseñamos e implementamos <strong>sistemas de seguridad electrónica</strong> adaptados a las necesidades específicas de tu empresa, industria o institución.
               </p>
               <p>
                 Nuestras soluciones combinan cámaras de videovigilancia de última generación, control de accesos biométrico, sensores de intrusión y sistemas de alarma integrados, todo gestionado desde una plataforma centralizada con capacidad de monitoreo remoto.

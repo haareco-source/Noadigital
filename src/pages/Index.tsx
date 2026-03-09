@@ -194,7 +194,7 @@ const Index = () => {
                 Ingeniería, Innovación y Transformación
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                FABRI3D combina ingeniería, innovación y automatización para brindar soluciones adaptadas a la Industria 4.0 y 5.0.
+                NOADIGITAL combina ingeniería, innovación y automatización para brindar soluciones adaptadas a la Industria 4.0 y 5.0.
               </p>
               <div className="grid grid-cols-3 gap-6 mt-8">
                 <div className="text-center">
