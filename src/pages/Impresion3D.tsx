@@ -112,7 +112,7 @@ const Impresion3D = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Servicios de Impresión 3D Industrial</h2>
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
               <p>
-                La <strong>impresión 3D profesional</strong> ha revolucionado la manera en que se diseñan y fabrican piezas. La <strong>impresión 3D profesional</strong> ha revolucionado la manera en que se diseñan y fabrican piezas. En <span className="text-primary font-semibold">NOADIGITAL</span>, ofrecemos servicios completos de manufactura aditiva para empresas que buscan optimizar sus procesos de producción., ofrecemos servicios completos de manufactura aditiva para empresas que buscan optimizar sus procesos de producción.
+                La <strong>impresión 3D profesional</strong> ha revolucionado la manera en que se diseñan y fabrican piezas. En <span className="text-primary font-semibold">NOADIGITAL</span>, ofrecemos servicios completos de manufactura aditiva para empresas que buscan optimizar sus procesos de producción.
               </p>
               <p>
                 Desde prototipado rápido hasta fabricación de piezas finales, trabajamos con una amplia variedad de materiales técnicos que garantizan resistencia, precisión y durabilidad. Nuestro equipo de ingenieros se encarga del diseño CAD, preparación de archivos y producción de cada pieza con los más altos estándares de calidad.

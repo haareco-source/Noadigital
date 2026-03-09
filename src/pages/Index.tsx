@@ -142,7 +142,7 @@ const Index = () => {
               <CarouselItem key={index}>
                 <div className="relative h-[600px] md:h-[700px] overflow-hidden">
                   {/* Background Image */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black">
+                  <div className="absolute inset-0 bg-gradient-to-br from-foreground/90 via-foreground/70 to-foreground/90">
                     <img 
                       src={slide.image} 
                       alt={slide.title}
@@ -152,18 +152,18 @@ const Index = () => {
                   
                   {/* Content Overlay */}
                   <div className="container relative z-10 h-full flex items-center">
-                    <div className="max-w-3xl text-white">
+                    <div className="max-w-3xl text-primary-foreground">
                       <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">
                         {slide.title}
                       </h2>
-                      <p className="text-xl md:text-2xl mb-8 text-gray-300 animate-slide-up">
+                      <p className="text-xl md:text-2xl mb-8 text-primary-foreground/80 animate-slide-up">
                         {slide.description}
                       </p>
                       <div className="flex flex-col sm:flex-row gap-4 animate-scale-in">
                         <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-lg">
                           <Link to={slide.link}>Conocer más</Link>
                         </Button>
-                        <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black text-lg">
+                        <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg">
                           <a href="#contacto">Contactanos</a>
                         </Button>
                       </div>
@@ -173,8 +173,8 @@ const Index = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="left-4 bg-black/50 text-white border-white/20 hover:bg-black/70" />
-          <CarouselNext className="right-4 bg-black/50 text-white border-white/20 hover:bg-black/70" />
+          <CarouselPrevious className="left-4 bg-foreground/50 text-primary-foreground border-primary-foreground/20 hover:bg-foreground/70" />
+          <CarouselNext className="right-4 bg-foreground/50 text-primary-foreground border-primary-foreground/20 hover:bg-foreground/70" />
         </Carousel>
       </section>
 
