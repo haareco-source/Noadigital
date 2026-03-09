@@ -130,7 +130,7 @@ const Capacitaciones = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Formación Profesional en Tecnología</h2>
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
               <p>
-                En <span className="text-primary font-semibold">NOADIGITAL</span>, ofrecemos programas de capacitación diseñados para profesionales, equipos técnicos y estudiantes que buscan desarrollar competencias en las tecnologías más demandadas de la actualidad., ofrecemos programas de capacitación diseñados para profesionales, equipos técnicos y estudiantes que buscan desarrollar competencias en las tecnologías más demandadas de la actualidad.
+                En <span className="text-primary font-semibold">NOADIGITAL</span>, ofrecemos programas de capacitación diseñados para profesionales, equipos técnicos y estudiantes que buscan desarrollar competencias en las tecnologías más demandadas de la actualidad.
               </p>
               <p>
                 Nuestros cursos combinan teoría y práctica, con casos reales de aplicación industrial, ejercicios hands-on y proyectos finales que permiten consolidar los conocimientos adquiridos. Cada participante recibe certificación oficial y acceso a material de apoyo continuo.
