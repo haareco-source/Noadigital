@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Logo & Description */}
           <div>
             <Link to="/" className="inline-block mb-4">
-              <span className="text-2xl font-bold text-primary">FABRI3D</span>
+              <span className="text-2xl font-bold text-primary">NOADIGITAL</span>
             </Link>
             <p className="text-footer-foreground/70 mb-4">
               Innovación y Tecnología Aplicada para la transformación digital de tu empresa
