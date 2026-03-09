@@ -112,7 +112,7 @@ const SoporteTecnico = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Soporte Técnico Profesional</h2>
             <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
               <p>
-                En <span className="text-primary font-semibold">NOADIGITAL</span>, ofrecemos <strong>servicios de soporte técnico y gestión de infraestructura IT</strong> diseñados para garantizar la continuidad operativa de tu empresa., ofrecemos <strong>servicios de soporte técnico y gestión de infraestructura IT</strong> diseñados para garantizar la continuidad operativa de tu empresa.
+                En <span className="text-primary font-semibold">NOADIGITAL</span>, ofrecemos <strong>servicios de soporte técnico y gestión de infraestructura IT</strong> diseñados para garantizar la continuidad operativa de tu empresa.
               </p>
               <p>
                 Nuestro equipo de técnicos especializados brinda asistencia on-site y remota para resolver incidentes, realizar mantenimiento preventivo y optimizar el rendimiento de equipos, redes y servidores. Trabajamos con empresas de todos los tamaños, desde pequeñas oficinas hasta grandes instalaciones industriales.
