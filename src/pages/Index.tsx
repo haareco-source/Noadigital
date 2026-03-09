@@ -185,7 +185,7 @@ const Index = () => {
             <div>
               <img 
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800" 
-                alt="Equipo FABRI3D" 
+                alt="Equipo NOADIGITAL" 
                 className="rounded-lg shadow-xl"
               />
             </div>
