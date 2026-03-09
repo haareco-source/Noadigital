@@ -115,7 +115,7 @@ const TransformacionDigital = () => {
                 La transformación digital es el proceso de integrar tecnologías digitales en todas las áreas de tu negocio, cambiando fundamentalmente la forma en que operas y entregas valor a tus clientes.
               </p>
               <p>
-                En <span className="text-primary font-semibold">FABRI3D</span>, acompañamos a empresas en su proceso de modernización mediante la implementación de soluciones de <strong>IoT, Cloud Computing, Inteligencia Artificial y automatización</strong>, adaptadas a las necesidades específicas de cada industria.
+                En <span className="text-primary font-semibold">NOADIGITAL</span>, acompañamos a empresas en su proceso de modernización mediante la implementación de soluciones de <strong>IoT, Cloud Computing, Inteligencia Artificial y automatización</strong>, adaptadas a las necesidades específicas de cada industria., acompañamos a empresas en su proceso de modernización mediante la implementación de soluciones de <strong>IoT, Cloud Computing, Inteligencia Artificial y automatización</strong>, adaptadas a las necesidades específicas de cada industria.
               </p>
               <p>
                 Nuestro enfoque combina consultoría estratégica con implementación técnica, garantizando que cada solución genere un impacto medible en eficiencia, productividad y rentabilidad.

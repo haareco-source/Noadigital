@@ -185,7 +185,7 @@ const Index = () => {
             <div>
               <img 
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800" 
-                alt="Equipo FABRI3D" 
+                alt="Equipo NOADIGITAL" 
                 className="rounded-lg shadow-xl"
               />
             </div>
@@ -194,7 +194,7 @@ const Index = () => {
                 Ingeniería, Innovación y Transformación
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                FABRI3D combina ingeniería, innovación y automatización para brindar soluciones adaptadas a la Industria 4.0 y 5.0.
+                NOADIGITAL combina ingeniería, innovación y automatización para brindar soluciones adaptadas a la Industria 4.0 y 5.0.
               </p>
               <div className="grid grid-cols-3 gap-6 mt-8">
                 <div className="text-center">

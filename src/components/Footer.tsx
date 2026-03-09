@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Logo & Description */}
           <div>
             <Link to="/" className="inline-block mb-4">
-              <span className="text-2xl font-bold text-primary">FABRI3D</span>
+              <span className="text-2xl font-bold text-primary">NOADIGITAL</span>
             </Link>
             <p className="text-footer-foreground/70 mb-4">
               Innovación y Tecnología Aplicada para la transformación digital de tu empresa
@@ -141,7 +141,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Globe className="w-5 h-5 text-primary flex-shrink-0" />
-                <span className="text-footer-foreground/70">www.fabri3d.com.ar</span>
+                <span className="text-footer-foreground/70">www.noadigital.com.ar</span>
               </li>
             </ul>
           </div>
@@ -151,7 +151,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-footer-foreground/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-footer-foreground/70 text-sm">
-              © 2025 FABRI3D — Innovación y Tecnología Aplicada
+              © 2025 NOADIGITAL — Innovación y Tecnología Aplicada
             </p>
             <div className="flex items-center gap-4">
               <a
