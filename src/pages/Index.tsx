@@ -152,7 +152,7 @@ const Index = () => {
                   
                   {/* Content Overlay */}
                   <div className="container relative z-10 h-full flex items-center">
-                    <div className="max-w-3xl text-white">
+                    <div className="max-w-3xl text-primary-foreground">
                       <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">
                         {slide.title}
                       </h2>
