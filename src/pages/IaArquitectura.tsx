@@ -1,9 +1,51 @@
-import { Sparkles } from "lucide-react";
+import { Sparkles, Building2, Megaphone, Share2, Eye, Bot, Briefcase, ArrowUpRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
-const IaArquitectura = () => {
+const aiAreas = [
+  {
+    icon: Building2,
+    title: "IA aplicada a la Arquitectura",
+    description:
+      "Generá renders, fachadas y visualizaciones arquitectónicas en segundos. Optimizá espacios y potenciá tu creatividad con IA generativa.",
+    cta: "Iniciar Asistente de Diseño AI",
+    link: "https://opal.google/app/1xXhX3N6pcNSgefj65XZY2za5WeZHfaod",
+    featured: true,
+  },
+  {
+    icon: Megaphone,
+    title: "IA aplicada al Marketing",
+    description:
+      "Automatizá campañas, segmentá audiencias con precisión y generá copys persuasivos. Maximizá tu ROI con análisis predictivo e insights en tiempo real.",
+  },
+  {
+    icon: Share2,
+    title: "Contenido para Redes Sociales",
+    description:
+      "Creá publicaciones, reels, imágenes y calendarios editoriales con IA. Mantené tu marca activa y coherente sin perder horas de producción.",
+  },
+  {
+    icon: Briefcase,
+    title: "IA para Empresas",
+    description:
+      "Automatizá procesos, atención al cliente y reportes internos. Implementá asistentes inteligentes que potencian la productividad de tu equipo.",
+  },
+  {
+    icon: Eye,
+    title: "Visión por Computadora",
+    description:
+      "Detección de objetos, control de calidad, reconocimiento facial y análisis de video. Aplicaciones industriales, seguridad y monitoreo inteligente.",
+  },
+  {
+    icon: Bot,
+    title: "Asistentes y Chatbots IA",
+    description:
+      "Bots conversacionales entrenados con la información de tu negocio. Disponibles 24/7 en WhatsApp, web y redes sociales.",
+  },
+];
+
+const IaAplicada = () => {
   return (
     <div className="min-h-screen">
       <Header />
@@ -17,36 +59,81 @@ const IaArquitectura = () => {
               Inteligencia Artificial
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              IA aplicada a la Arquitectura
+              IA Aplicada
             </h1>
             <p className="text-lg text-muted-foreground">
-              Explorá el potencial de la inteligencia artificial para el diseño, la planificación y la visualización arquitectónica. Generá renders, optimizá espacios y potenciá tu creatividad con herramientas de última generación.
+              Soluciones de Inteligencia Artificial aplicadas a las áreas más demandadas de la actualidad: arquitectura, marketing, redes sociales, visión por computadora y mucho más. Potenciá tu negocio con tecnología de vanguardia.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Presentation Card */}
-      <section className="py-12 md:py-16">
-        <div className="container max-w-2xl">
-          <div className="rounded-xl bg-card border border-border shadow-md overflow-hidden">
-            <div className="p-8 md:p-12 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Diseñador de Fachadas con IA
-              </h2>
-              <p className="text-muted-foreground text-lg mb-8 max-w-lg mx-auto">
-                Experimentá el futuro del diseño arquitectónico. Nuestro asistente de IA te ayuda a visualizar, crear y optimizar fachadas de edificios en segundos, combinando creatividad humana con inteligencia artificial.
-              </p>
-              <a
-                href="https://opal.google/app/1xXhX3N6pcNSgefj65XZY2za5WeZHfaod"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg px-8 py-4 rounded-lg transition-colors shadow-lg hover:shadow-xl"
-              >
-                Iniciar Asistente de Diseño AI
-                <span className="text-xl">↗</span>
-              </a>
-            </div>
+      {/* Cards Grid */}
+      <section className="py-16 md:py-20">
+        <div className="container">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {aiAreas.map((area) => {
+              const Icon = area.icon;
+              return (
+                <div
+                  key={area.title}
+                  className={`group relative rounded-xl border bg-card p-6 md:p-8 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col ${
+                    area.featured ? "border-primary/40 ring-1 ring-primary/20" : "border-border"
+                  }`}
+                >
+                  {area.featured && (
+                    <span className="absolute top-4 right-4 inline-flex items-center gap-1 bg-primary text-primary-foreground text-xs font-semibold px-2 py-1 rounded-full">
+                      <Sparkles className="w-3 h-3" /> Destacado
+                    </span>
+                  )}
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
+                    <Icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">{area.title}</h3>
+                  <p className="text-muted-foreground mb-6 flex-1">{area.description}</p>
+                  {area.link ? (
+                    <a
+                      href={area.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-5 py-3 rounded-lg transition-colors shadow"
+                    >
+                      {area.cta}
+                      <ArrowUpRight className="w-4 h-4" />
+                    </a>
+                  ) : (
+                    <a
+                      href="#contacto"
+                      className="inline-flex items-center justify-center gap-2 border border-border hover:border-primary hover:text-primary font-semibold px-5 py-3 rounded-lg transition-colors"
+                    >
+                      Consultar
+                      <ArrowUpRight className="w-4 h-4" />
+                    </a>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA final */}
+      <section className="pb-20">
+        <div className="container">
+          <div className="max-w-4xl mx-auto rounded-2xl bg-gradient-to-br from-primary/10 via-card to-card border border-border p-8 md:p-12 text-center shadow-md">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              ¿Querés implementar IA en tu empresa?
+            </h2>
+            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+              Analizamos tus procesos y diseñamos una solución de Inteligencia Artificial a medida para tu industria.
+            </p>
+            <a
+              href="/#contacto"
+              className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-4 rounded-lg transition-colors shadow-lg"
+            >
+              Hablemos de tu proyecto
+              <ArrowUpRight className="w-5 h-5" />
+            </a>
           </div>
         </div>
       </section>
@@ -57,4 +144,4 @@ const IaArquitectura = () => {
   );
 };
 
-export default IaArquitectura;
+export default IaAplicada;
