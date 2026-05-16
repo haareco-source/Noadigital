@@ -29,7 +29,7 @@ const Header = () => {
     { name: "Quiénes Somos", href: "#quienes-somos", isExternal: false, isScroll: true },
     { name: "Servicios", href: "#servicios", isExternal: false, isScroll: true },
     { name: "Proyectos", href: "/proyectos", isExternal: false },
-    { name: "IA Arquitectura", href: "/ia-arquitectura", isExternal: false },
+    { name: "IA Aplicada", href: "/ia-arquitectura", isExternal: false },
     { name: "Contacto", href: "#contacto", isExternal: false, isScroll: true },
   ];
 
