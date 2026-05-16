@@ -10,6 +10,7 @@ import SeguridadElectronica from "./pages/SeguridadElectronica";
 import SoporteTecnico from "./pages/SoporteTecnico";
 import Capacitaciones from "./pages/Capacitaciones";
 import Proyectos from "./pages/Proyectos";
+import IaArquitectura from "./pages/IaArquitectura";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/servicios/soporte-tecnico" element={<SoporteTecnico />} />
           <Route path="/servicios/capacitaciones" element={<Capacitaciones />} />
           <Route path="/proyectos" element={<Proyectos />} />
+          <Route path="/ia-arquitectura" element={<IaArquitectura />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
