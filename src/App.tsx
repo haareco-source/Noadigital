@@ -10,6 +10,7 @@ import SeguridadElectronica from "./pages/SeguridadElectronica";
 import SoporteTecnico from "./pages/SoporteTecnico";
 import Capacitaciones from "./pages/Capacitaciones";
 import Proyectos from "./pages/Proyectos";
+import IaArquitectura from "./pages/IaArquitectura";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
