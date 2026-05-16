@@ -26,21 +26,27 @@ const IaArquitectura = () => {
         </div>
       </section>
 
-      {/* Iframe Container */}
+      {/* Presentation Card */}
       <section className="py-12 md:py-16">
-        <div className="container">
-          <div className="rounded-xl overflow-hidden shadow-md bg-card border border-border">
-            <iframe
-              src="https://opal.google/app/1xXhX3N6pcNSgefj65XZY2za5WeZHfaod"
-              width="100%"
-              height="800"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Herramienta de IA para Arquitectura"
-              className="block"
-            />
+        <div className="container max-w-2xl">
+          <div className="rounded-xl bg-card border border-border shadow-md overflow-hidden">
+            <div className="p-8 md:p-12 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Diseñador de Fachadas con IA
+              </h2>
+              <p className="text-muted-foreground text-lg mb-8 max-w-lg mx-auto">
+                Experimentá el futuro del diseño arquitectónico. Nuestro asistente de IA te ayuda a visualizar, crear y optimizar fachadas de edificios en segundos, combinando creatividad humana con inteligencia artificial.
+              </p>
+              <a
+                href="https://opal.google/app/1xXhX3N6pcNSgefj65XZY2za5WeZHfaod"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg px-8 py-4 rounded-lg transition-colors shadow-lg hover:shadow-xl"
+              >
+                Iniciar Asistente de Diseño AI
+                <span className="text-xl">↗</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
