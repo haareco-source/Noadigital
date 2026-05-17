@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Cpu, Printer, Shield, Wrench, GraduationCap, MapPin, Phone, Mail, Globe, Facebook, Linkedin, Instagram, Youtube } from "lucide-react";
+import { ArrowRight, Cpu, Printer, Shield, Wrench, GraduationCap, MapPin, Phone, Mail, Globe, Facebook, Linkedin, Instagram, Youtube, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -95,6 +95,12 @@ const Index = () => {
       title: "Cursos y Capacitaciones Tecnológicas",
       description: "Formación especializada en IA, robótica, impresión 3D y tecnologías emergentes",
       link: "/servicios/capacitaciones"
+    },
+    {
+      icon: Sparkles,
+      title: "IA Aplicada",
+      description: "Soluciones de Inteligencia Artificial para arquitectura, marketing, redes sociales, visión por computadora y más",
+      link: "/ia-arquitectura"
     }
   ];
 
