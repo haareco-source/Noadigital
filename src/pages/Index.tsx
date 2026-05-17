@@ -95,6 +95,12 @@ const Index = () => {
       title: "Cursos y Capacitaciones Tecnológicas",
       description: "Formación especializada en IA, robótica, impresión 3D y tecnologías emergentes",
       link: "/servicios/capacitaciones"
+    },
+    {
+      icon: Sparkles,
+      title: "IA Aplicada",
+      description: "Soluciones de Inteligencia Artificial para arquitectura, marketing, redes sociales, visión por computadora y más",
+      link: "/ia-arquitectura"
     }
   ];
 
