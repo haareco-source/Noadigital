@@ -10,7 +10,7 @@ const aiAreas = [
     description:
       "Generá renders, fachadas y visualizaciones arquitectónicas en segundos. Optimizá espacios y potenciá tu creatividad con IA generativa.",
     cta: "Iniciar Asistente de Diseño AI",
-    link: "https://opal.google/app/1xXhX3N6pcNSgefj65XZY2za5WeZHfaod",
+    link: "https://opal.google/app/1yE5U0YQod_e6wh-pTy_hX0Yws3mMKK_A",
     featured: true,
   },
   {
@@ -58,11 +58,11 @@ const IaAplicada = () => {
               <Sparkles className="w-4 h-4" />
               Inteligencia Artificial
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              IA Aplicada
-            </h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">IA Aplicada</h1>
             <p className="text-lg text-muted-foreground">
-              Soluciones de Inteligencia Artificial aplicadas a las áreas más demandadas de la actualidad: arquitectura, marketing, redes sociales, visión por computadora y mucho más. Potenciá tu negocio con tecnología de vanguardia.
+              Soluciones de Inteligencia Artificial aplicadas a las áreas más demandadas de la actualidad: arquitectura,
+              marketing, redes sociales, visión por computadora y mucho más. Potenciá tu negocio con tecnología de
+              vanguardia.
             </p>
           </div>
         </div>
@@ -121,9 +121,7 @@ const IaAplicada = () => {
       <section className="pb-20">
         <div className="container">
           <div className="max-w-4xl mx-auto rounded-2xl bg-gradient-to-br from-primary/10 via-card to-card border border-border p-8 md:p-12 text-center shadow-md">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              ¿Querés implementar IA en tu empresa?
-            </h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">¿Querés implementar IA en tu empresa?</h2>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
               Analizamos tus procesos y diseñamos una solución de Inteligencia Artificial a medida para tu industria.
             </p>
